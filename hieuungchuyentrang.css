@@ -1,0 +1,47 @@
+
+/* Loading */
+
+.center {
+    display: flex; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    z-index: 200;
+    overflow: hidden;
+    background: rgb(224, 220, 220);
+    transition: 1.5s;
+  }
+  
+  .outer {
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(135deg, #ffed07 0%, #fe6a50, #ed00aa 50%, #8900FF 100%);
+  border-radius: 50%;
+  animation: rotate 2s ease infinite;
+  }
+  
+  @keyframes rotate {
+  to {
+      transform: rotate(360deg);
+  }
+  }
+  
+  .inner {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  text-align: center;
+  line-height: 190px;
+  border-radius: 50%;
+  background: rgb(224, 220, 220);
+  }
+  
+  .inner span {
+  font-size: 30px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffed07 0%, #fe6a50, #ed00aa 50%, #8900FF 100%);
+  color: black;
+  -webkit-background-clip: text;
+  background-size: 300%;
+  }
